@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/67aa33abf6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Conversor de Moedas</title>
+</head>
+<body>
+  <header>
+    <h1>Conversor de <span class="primary-color">Moedas</span></h1>
+  </header>
+
+  <div class="container">
+    <div class="user-interface">
+      <div class="input-field">
+        <label for="value">Valor <span id="value-span">(em real)</span></label>
+        <input type="number" name="value" id="value" placeholder="Insira um Valor">
+      </div>
+
+      <div class="currency-field">
+        <select name="first-currency" id="first-currency">
+          <option value="BRL">Real</option>
+          <option value="USD">Dólar</option>
+          <option value="EUR">Euro</option>
+          <option value="BTC">Bitcoin</option>
+        </select>
+  
+        <button id="change"><i class="fa-solid fa-rotate"></i></button>
+  
+        <select name="second-currency" id="second-currency">
+          <option value="USD">Dólar</option>
+          <option value="BRL">Real</option>
+          <option value="EUR">Euro</option>
+          <option value="BTC">Bitcoin</option>
+        </select>
+      </div>
+
+      <button id="convertBtn"><i class="fa-solid fa-check"></i></button>
+    </div>
+
+    <div class="result-container">
+      <h2>Resultado da Conversão</h2>
+      <span id="convertion-result"></span>
+    </div>
+  </div>
+</body>
+</html>

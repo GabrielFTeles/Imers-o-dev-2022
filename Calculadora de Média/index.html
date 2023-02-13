@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Calculadora de Média</title>
+</head>
+<body>
+  <header>
+    <h1>Calculadora de <span class="primary-color">Média</span></h1>
+    <p>Descubra qual a sua média de nota de todas as provas!</p>
+  </header>
+
+  <div class="avarage-calculator">
+    <div class="input-field">
+      <label for="name">
+        Nome do <span class="primary-color">Aluno</span>
+        <span class="information-span">(até 10 caracteres)</span>
+      </label>
+      <input type="text" name="name" id="name" placeholder="Ex. Gabriel">
+    </div>
+
+    <div class="input-field">
+      <label for="gradeA">
+        Nota do <span class="primary-color">Primeiro</span> bimestre 
+        <span class="information-span">(de 0 até 10)</span>
+      </label>
+      <input type="number" name="gradeA" id="gradeA" value="0">
+    </div>
+
+    <div class="input-field">
+      <label for="gradeA">
+        Nota do <span class="primary-color">Segundo</span> bimestre 
+        <span class="information-span">(de 0 até 10)</span>
+      </label>
+      <input type="number" name="gradeB" id="gradeB" value="0">
+    </div>
+
+    <div class="input-field">
+      <label for="gradeA">
+        Nota do <span class="primary-color">Terceiro</span> bimestre 
+        <span class="information-span">(de 0 até 10)</span>
+      </label>
+      <input type="number" name="gradeC" id="gradeC" value="0">
+    </div>
+
+    <div class="input-field">
+      <label for="gradeA">Nota do <span class="primary-color">Quarto</span> bimestre 
+        <span class="information-span">(de 0 até 10)</span>
+      </label>
+      <input type="number" name="gradeD" id="gradeD" value="0">
+    </div>
+
+    <div class="result"></div>
+
+    <button id="calculateBtn">Calcular</button>
+  </div>
+</body>
+</html>

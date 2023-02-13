@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/67aa33abf6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Mentalista</title>
+</head>
+<body>
+  <header>
+    <h1><span class="primary-color">Menta</span>lista</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="input-field">
+        <label for="number-input">Digite um número <span class="information-span">(de 0 até 10)</span></label>
+        <div class="input-button">
+          <input type="number" name="number-input" id="number-input" placeholder="Insira um número">
+          <button class="button" id="tryBtn"><i class="fa-solid fa-shoe-prints"></i></button>
+        </div>
+      </div>
+
+      <div class="lifes">
+        <div class="hearths">
+        </div>
+        <span class="information-span">(tentativas restantes)</span>
+      </div>
+
+      <span class="primary-color" title="Será exibido uma dica quando você tentar um número">
+        Dica: 
+        <span class="tip white">tente um número e receba uma dica se errar</span>
+        <i class="fa-solid fa-lightbulb yellow"></i>
+      </span>
+    </div>
+  </main>
+</body>
+</html>

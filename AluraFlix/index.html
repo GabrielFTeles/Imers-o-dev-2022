@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/67aa33abf6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>AluraFlix</title>
+</head>
+<body>
+  <header>
+    <h1>Alura <span class="primary-color">Flix</span></h1>
+  </header>
+
+  <main>
+    <section class="content">
+      <div class="container">
+        <div class="add-movie-field">
+          <input type="text" name="movie-name" id="movie-name" placeholder="Nome do Filme/Série">
+          <input type="text" name="movie-url" id="movie-url" placeholder="URL da capa">
+          <div class="error-and-button">
+            <p class="error"></p>
+            <button id="addBtn">Adicionar</button>
+          </div>
+        </div>
+
+        <div class="movies-cards">
+          <div class="cards-list">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

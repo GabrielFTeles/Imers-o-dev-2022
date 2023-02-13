@@ -1,0 +1,212 @@
+/* RESET CSS */
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+/* GLOBAL CSS */
+* {
+  transition: outline 0.08s;
+}
+
+*:focus {
+  outline: 3px solid #5db6f5;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --background-color: #282a36;
+
+  --theme-color: 55;
+
+  --primary-color: hsl(var(--theme-color), 70%, 69%);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+
+  padding: 4rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  background: var(--background-color);
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #E1E1E6;
+}
+
+label {
+  color: white;
+  font-weight: bolder;
+}
+
+select {
+  height: 2.8rem;
+  border-radius: 5px;
+}
+
+button {
+  height: 2.8rem;
+  width: 3rem;
+
+  cursor: pointer;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+header {
+  text-align: center;
+}
+
+#change,
+select,
+#convertBtn {
+  align-self: flex-end;
+}
+
+/*!==== CONVERSOR ==============================*/
+
+.container {
+  padding: 4rem;
+
+  width: min(46rem, 100%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin: auto;
+
+  border: 3px solid var(--primary-color);
+  border-radius: 7px;
+}
+
+.user-interface {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+
+  width: 40%;
+}
+
+.input-field input {
+  height: 2.8rem;
+
+  padding-inline: 1rem;
+  
+  border: none;
+  border-radius: 5px;
+}
+
+.input-field label span {
+  color: var(--primary-color);
+  opacity: 0.6;
+
+  transition: 0.3s;
+}
+
+.input-field label:hover span {
+  opacity: 1;
+}
+
+.currency-field {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+#change {
+  border: none;
+  border-radius: 3px;
+
+  background: var(--primary-color);
+
+  color: var(--background-color);
+}
+
+#change i {
+  transition: 0.5s;
+}
+
+#change:hover i {
+  transform: rotate(360deg);
+}
+
+#convertBtn {
+  background: transparent;
+
+  color: var(--primary-color);
+
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+
+  position: relative;
+  
+  transition: 0.3s;
+}
+
+#convertBtn:hover {
+  background: var(--primary-color);
+  color: var(--background-color);
+}
+
+
+.result-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 2rem;
+
+  border-radius: 5px;
+
+  background: var(--primary-color);
+
+  text-align: center;
+
+  overflow: hidden;
+}
+
+.result-container h2,
+.result-container span {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  color: var(--background-color);
+}
+
+.result-container span {
+  font-size: 4.2rem;
+}
+
+
+/*!==== RESPONSIVE (not tha much responsive lmao) ============================*/
+
+@media (max-width: 485px) {
+  .user-interface {
+    flex-direction: column;
+  }
+
+  .input-field,
+  #change,
+  select,
+  #convertBtn {
+    align-self: center;
+  }
+
+  .input-field {
+    text-align: center;
+  }
+}
